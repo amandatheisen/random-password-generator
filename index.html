@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | Amanda Theisen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+        
+    <div class="title-description">
+        <h1>Random Password Generator</h1>
+    </div class="output">
+    <form id="form-inputs">
+        <div class="output">
+            <input type="text" id="password" placeholder="Your password will appear here">
+            <button id="copy-btn">Copy</button>
+        </div>
+
+        <div class="space-l"></div>
+
+        <div id="n-of-characters">
+            <label class="characters-lbl" for="n-characters">Number of characters: </label>
+            <input type="number" name="n-characters" min="6" max="30">
+        </div>
+
+        <div class="space-s"></div>
+
+        <div id="type-of-characters">
+            <div class="characters-lbl">
+                <label for="n-characters">Include in your password:</label>
+            </div>
+            <div class="characters-input-container">
+                <div class="characters-input">
+                    <label for="first-l-input">Abc</label>
+                    <input type="checkbox" id="first-l-input" name="input-options" value="first-l-input">
+                </div>
+                <div class="characters-input">
+                    <label for="lower-case">abc</label>
+                    <input type="checkbox" id="lower-case" name="input-options" value="lower-case">
+                </div>
+                <div class="characters-input">
+                    <label for="capital-letter">ABC</label>
+                    <input type="checkbox" id="capital-letter" name="input-options" value="capital-letter">
+                </div>
+                <div class="characters-input">
+                    <label for="numbers-input">123</label>
+                    <input type="checkbox" id="numbers-input" name="input-options" value="numbers-input">
+                </div>
+                <div class="characters-input">
+                    <label for="special-c-input">#$&</label>
+                    <input type="checkbox" id="special-c-input" name="input-options" value="special-c-input">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="space-l"></div>
+        
+        <div id="submit-reset-input">
+            <input type="reset" id="button-reset" class="final-input" value="Reset">
+            <input type="submit" id="button-submit"class="final-input" value="Submit">
+        </div>
+    </form>
+
+</body>
+</html>
